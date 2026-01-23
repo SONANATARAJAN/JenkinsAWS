@@ -176,3 +176,19 @@ The output should indicate that the Jenkins service is `active (running)`.
   - Use SSL for secure access by configuring a reverse proxy (e.g., Nginx or Apache).
 
 For more information, refer to the official [Jenkins Documentation](https://www.jenkins.io/doc/).
+
+
+**Note **
+If the Jenkins Getting over Loading : that time please Check the AWS EC2 Instance name IP 
+need to configured in the Jenkins path 
+
+```bash
+cd /var/lib/jenkins
+ vi jenkins.model.JenkinsLocationConfiguration.xml
+
+
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <jenkinsUrl>http://13.60.25.94:8080/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>
+```
