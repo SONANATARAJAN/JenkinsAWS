@@ -1,7 +1,13 @@
 # Jenkins Email & Mailer Plugin – Complete Notes
 
-**WHAT IS PLUGINS :
-**
+**WHAT IS PLUGINS :**
+Plugins in Jenkins are add-ons that extend its core functionality
+
+Jenkins is light  weight with help help of plugins its been strong
+support with 
+```bash
+like github,Docker,notification,diff build Tooland UI improvement\
+```
 Plugins is new Enhancement to Jenkins
 
 
