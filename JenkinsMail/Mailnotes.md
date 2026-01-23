@@ -1,5 +1,11 @@
 # Jenkins Email & Mailer Plugin – Complete Notes
 
+**WHAT IS PLUGINS :
+**
+Plugins is new Enhancement to Jenkins
+
+
+
 ## 1. Introduction
 
 Jenkins provides **email notification** features to inform users about job build status (SUCCESS / FAILURE / UNSTABLE). This is achieved using:
