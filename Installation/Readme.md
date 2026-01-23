@@ -27,58 +27,70 @@ To install Jenkins on a Debian-based system (e.g., Ubuntu), ensure the following
 
 Follow these steps to install Jenkins on a Debian-based system.
 
-### 1. Install Java
-
- 1️⃣ System Update (Always First)
+### 1. Install Java 
+**System Update (Always First)**
+```bash
 sudo apt update
 sudo apt upgrade -y
+```
 
-2️⃣ Required Packages (Latest)
-sudo apt install -y \
+**Required Packages (Latest)**
+
+```bash
+  sudo apt install -y \
   openjdk-17-jdk \
   ca-certificates \
   curl \
   gnupg \
   lsb-release
-
+```
 
 🔹 Jenkins officially supports Java 17 (latest recommended)
 
 Verify:
-
+```bash
 java -version
+```
 
-3️⃣ Jenkins Signing Key (Latest – Valid till 2028)
+Jenkins Signing Key (Latest – Valid till 2028)
+```bash
 sudo mkdir -p /etc/apt/keyrings
-
 gpg --keyserver keyserver.ubuntu.com --recv-keys 7198F4B714ABFC68
 gpg --export 7198F4B714ABFC68 | sudo tee /etc/apt/keyrings/jenkins.gpg > /dev/null
-
+```
 
 Verify:
-
+```bash
 gpg --show-keys /etc/apt/keyrings/jenkins.gpg
+```
 
-4️⃣ Jenkins Repository (Stable / LTS)
+**Jenkins Repository (Stable / LTS)**
 echo "deb [signed-by=/etc/apt/keyrings/jenkins.gpg] https://pkg.jenkins.io/debian-stable binary/" \
 | sudo tee /etc/apt/sources.list.d/jenkins.list
 
-5️⃣ Update Package Index
+** Update Package Index**
+```bash
 sudo apt update
+```
 
-6️⃣ Install Latest Jenkins (LTS)
+**Install Latest Jenkins (LTS)**
+```bash
 sudo apt install -y jenkins
+```
 
 
-Check version:
-
+**Check version:**
+```bash
 jenkins --version
+```
 
-7️⃣ Start & Enable Jenkins Service
+** Start & Enable Jenkins Service**
+```bash
 sudo systemctl daemon-reexec
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
+```
 
 
 ### 3. Start and Enable Jenkins
