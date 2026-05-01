@@ -45,7 +45,7 @@ java -version
 The output should display the installed Java version, such as:
 ```
 openjdk version "17.0.8" 2023-07-18
-OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb11u1)
+OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb11u1).
 OpenJDK 64-Bit Server VM (build 17.0.8+7-Debian-1deb11u1, mixed mode, sharing)
 ```
 
