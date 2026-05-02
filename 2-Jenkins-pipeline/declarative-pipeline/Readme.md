@@ -37,7 +37,7 @@ pipeline {
 
 ### Key Concepts
 
-*   **`pipeline` block:** This is the main block that encloses the entire pipeline definition.
+*   **`pipeline` block:** This is the main block that encloses the entire pipeline definition..
 *   **`agent` directive:** This specifies where the entire Pipeline, or a specific stage, will execute in the Jenkins environment. `agent any` means that Jenkins can use any available agent to run the pipeline.
 *   **`stages` block:** This block contains one or more `stage` blocks, which are the main sections of your pipeline. Each stage represents a distinct part of your delivery process, such as "Build", "Test", or "Deploy".
 *   **`stage` block:** This defines a specific stage in the pipeline. Each stage is given a name that is displayed in the Jenkins UI.
